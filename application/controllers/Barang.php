@@ -18,4 +18,12 @@ class Barang extends CI_Controller{
         $this->load->view('templates/footer'); 
     }
 
+    function tambah()
+    {
+        $data['judul']='Tambah Data Barang';
+        $this->load->view('templates/header',$data);
+        $this->load->view('barang/tambah');
+        $this->load->view('templates/footer'); 
+    }
+
 }
