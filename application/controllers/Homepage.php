@@ -13,7 +13,9 @@ class Homepage extends CI_Controller{
     {
         $data['judul']="Toko Penjual";
         $this->load->view('templates/header',$data);
-        $this->load->view('barang/index');
+        $this->load->view('templates/sidebar');
+        $this->load->view('templates/topbar');
+        $this->load->view('home/index');
         $this->load->view('templates/footer');
     }
 
